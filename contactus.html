@@ -125,7 +125,8 @@
           </div>
           <div class="col-6 col-sm-3 my-auto">
             <form>
-              <a href="index.html#Reserve" class="btn btn-warning btn-block" >Reserve Table</a
+              <a data-toggle="tooltip" data-html="true"  title="Or Call us at  <br><strong>+852 12345678</strong>"
+                data-placement="bottom" href="index.html#Reserve" class="btn btn-warning btn-block" >Reserve Table</a
               >
             </form>
           </div>
@@ -385,5 +386,10 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+      $(document).ready(function(){
+          $('[data-toggle="tooltip"]').tooltip();
+      });
+    </script>
   </body>
 </html>

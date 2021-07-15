@@ -32,9 +32,9 @@ address {
   color: #0f0f0f;
 }
 
-body{
-    padding:50px 0px 0px 0px;
-    z-index:0;
+body {
+  padding: 50px 0px 0px 0px;
+  z-index: 0;
 }
 
 .navbar-dark {
@@ -42,7 +42,7 @@ body{
   background-color: #885b1f;
 }
 
-.send{
+.send {
   padding-bottom: 15px;
 }
 
@@ -51,5 +51,18 @@ body{
   border-right: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
   padding: 10px;
-  
 }
+
+.carousel {
+  background:#f3aa23;
+}
+
+.carousel-item {
+  height: 300px;
+}
+
+.carousel-item img {
+  position: absolute;
+  min-height: 300px;
+}
+
