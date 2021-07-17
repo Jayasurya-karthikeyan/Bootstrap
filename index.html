@@ -125,7 +125,7 @@
           </div>
           <div class="col-12 col-sm-3 my-auto">
             <form>
-              <a href="#Reserve" class="btn btn-warning btn-block"
+              <a data-toggle="modal" data-target="#reserveModal"  class="btn btn-warning btn-block"
                 >Reserve Table</a
               >
             </form>
@@ -133,6 +133,110 @@
         </div>
       </div>
     </header>
+
+    <div id="reserveModal" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-lg" role="content">
+          <!-- Modal content-->
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h4 class="modal-title">Reserve a Table </h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group row">
+                    <label for="No.of.guest" class="col-md-2 col-form-label"
+                      >Number of guests</label
+                    >
+                    <div class="form-check">&nbsp;&nbsp;&nbsp;
+                      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" >
+                      <label class="form-check-label" for="exampleRadios1">
+                        1 &nbsp;&nbsp;
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                      <label class="form-check-label" for="exampleRadios2">
+                        2 &nbsp;&nbsp;
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" >
+                      <label class="form-check-label" for="exampleRadios3">
+                        3 &nbsp;&nbsp;
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
+                      <label class="form-check-label" for="exampleRadios4">
+                        4 &nbsp;&nbsp;
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios5" value="option5" >
+                      5 &nbsp;&nbsp;
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios6" value="option6">
+                      <label class="form-check-label" for="exampleRadios6">
+                        6 &nbsp;&nbsp;
+                      </label>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="section" class="col-12 col-md-2 col-form-label">
+                      Section
+                    </label>
+                    <div class="col-5 col-md-4">
+                    <div class="btn-group" data-toggle="buttons">
+                      <label class="btn btn-light active">
+                        <input type="radio" name="options" id="option1" autocomplete="off" class="d-none" checked>Non-Smoking          
+                      </label>
+                      <label class="btn btn-dark">
+                        <input type="radio" name="options" id="option2" autocomplete="off" class="d-none" >Smoking
+                      </label>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="datetime" class="col-12 col-md-2 col-form-label"
+                      >Date and Time</label
+                    >
+                    <div class="col-5 col-md-4">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="date"
+                        name="date"
+                        placeholder="Date"
+                      />
+                    </div>
+                    <div class="col-5 col-md-4">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="time"
+                        name="time"
+                        placeholder="Time"
+                      />
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="offset-md-2 col-md-10">
+                      <button type="submit" class="btn btn-danger">
+                        Cancel
+                      </button>
+                      <button type="submit" class="btn btn-success">
+                        Reserve
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>    
+            </div>
+        </div>
+    </div>
 
     <div class="container">
 
@@ -270,7 +374,7 @@
           </div>
         </div>
       </div>
-      <div class="row row-content align-items-center" id="Reserve">
+      <!-- <div class="row row-content align-items-center" id="Reserve">
         <div class="col-12 col-sm-8 offset-sm-2">
           <div class="card">
             <h3 class="card-header bg-warning text-white">Reserve a Table</h3>
@@ -350,7 +454,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
 
     <footer class="footer">
