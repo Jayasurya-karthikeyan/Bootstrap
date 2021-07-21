@@ -1,0 +1,18 @@
+$jumbotron-color:#fd604b;
+$body-color:#fff1d7;
+
+.modal-header{
+    background-color:$jumbotron-color;
+    button{
+        color:$body-color ;
+      }
+    h4{
+        color:$body-color;
+    }
+  }
+.modal-body{
+    background-color:$body-color;
+}
+  
+
+  

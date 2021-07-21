@@ -9,8 +9,11 @@ body {
 .row-content {
   margin: 0px auto;
   padding: 50px 0px 50px 0px;
-  border-bottom: 1px ridge rgb(145, 143, 141);
   min-height: 400px;
+}
+
+.borderBottom{
+  border-bottom: 1px ridge rgb(145, 143, 141);
 }
 
 .footer {
@@ -72,3 +75,20 @@ body {
   bottom:0px;
   z-index: 1;
 }
+
+.modal-header{
+  background-color:#fd604b;
+}
+
+.modal-body{
+  background-color:#fff1d7;
+}
+
+.close.cross{
+  color:#fff1d7 ;
+}
+
+.modal-title{
+  color:floralwhite;
+}
+

@@ -11,10 +11,12 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/styles.css" />
-    <link
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!--  <link
       rel="stylesheet"
       href="node_modules/bootstrap/dist/css/bootstrap.min.css"
-    />
+    />-->
     <link
       rel="stylesheet"
       href="node_modules/font-awesome/css/font-awesome.min.css"
@@ -22,7 +24,9 @@
     <link
       rel="stylesheet"
       href="node_modules/bootstrap-social/bootstrap-social.css"
-    />
+    /> 
+
+    <!-- Bootstrap -->  
     <title>Home</title>
   </head>
 
@@ -65,7 +69,8 @@
             </li>
           </ul>
           <span class="navbar-text">
-            <a data-toggle="modal" data-target="#loginModal">
+            <a id="loginButton">
+              <!-- data-toggle="modal" data-target="#loginModal" -->
             <span class="fa fa-sign-in"></span> Login</a>
         </span>
         </div>
@@ -78,7 +83,7 @@
           <div class="modal-content">
               <div class="modal-header">
                   <h4 class="modal-title">Login </h4>
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <button type="button" class="close cross" data-dismiss="modal">&times;</button>
               </div>
               <div class="modal-body">
                   <form>
@@ -125,7 +130,9 @@
           </div>
           <div class="col-12 col-sm-3 my-auto">
             <form>
-              <a data-toggle="modal" data-target="#reserveModal"  class="btn btn-warning btn-block"
+              <!-- data-toggle="modal" data-target="#reserveModal"   -->
+              <a 
+              class="btn btn-warning btn-block" id="reserveButton"
                 >Reserve Table</a
               >
             </form>
@@ -140,7 +147,7 @@
           <div class="modal-content">
               <div class="modal-header">
                   <h4 class="modal-title">Reserve a Table </h4>
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <button type="button" class="close cross" data-dismiss="modal">&times;</button>
               </div>
               <div class="modal-body">
                 <form>
@@ -304,7 +311,7 @@
     </div>
   </div>
 
-      <div class="row row-content align-items-center">
+      <div class="row row-content align-items-center borderBottom">
         <div class="col-12 col-sm-4 col-md-3 order-sm-last">
           <h3>Our Lipsmacking Culinary Creations</h3>
         </div>
@@ -331,7 +338,7 @@
       </div>
 
 
-      <div class="row row-content align-items-center">
+      <div class="row row-content align-items-center borderBottom">
         <div class="col-12 col-sm-4 col-md-3">
           <h3>This Month's Promotions</h3>
         </div>
@@ -458,8 +465,8 @@
               </form>
             </div>
           </div>
-        </div>
-      </div> -->
+        </div>-->
+      </div> 
     </div>
 
     <footer class="footer">
@@ -542,33 +549,18 @@
       </div>
     </footer>
     <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
-    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <!-- <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script> -->
     <!-- <script>
       $(document).ready(function(){
           $('[data-toggle="tooltip"]').tooltip();
       });
   </script> -->
-  <script>
-    $(document).ready(function(){
-      $('#mycarousel').carousel({interval:1000});
-      $('#carouselButton').click(function(){
-        if ($('#carouselButton').children('span').hasClass('fa-pause')) {
-          $('#mycarousel').carousel('pause');
-          $('#carouselButton').children('span').removeClass('fa-pause');
-          $('#carouselButton').children('span').addClass('fa-play');
-        }
-        else if ($('#carouselButton').children('span').hasClass('fa-play')) {
-          $('#mycarousel').carousel('cycle');
-          $('#carouselButton').children('span').removeClass('fa-play');
-          $('#carouselButton').children('span').addClass('fa-pause');
-        }
-      });
-      // $('#carouselplay').click(function(){
-      //   $('#mycarousel').carousel('cycle');
-      // });
-    });
-  </script>
+  <!-- Bootstrap   -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="js/scripts.js">  </script>
   </body>
 </html>
