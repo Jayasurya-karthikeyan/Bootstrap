@@ -12,7 +12,7 @@ body {
   min-height: 400px;
 }
 
-.borderBottom{
+.borderBottom {
   border-bottom: 1px ridge rgb(145, 143, 141);
 }
 
@@ -57,7 +57,7 @@ body {
 }
 
 .carousel {
-  background:#f3aa23;
+  background: #f3aa23;
 }
 
 .carousel-item {
@@ -69,26 +69,25 @@ body {
   min-height: 300px;
 }
 
-#carouselButton{
-  right:0px;
+#carouselButton {
+  right: 0px;
   position: absolute;
-  bottom:0px;
+  bottom: 0px;
   z-index: 1;
 }
 
-.modal-header{
-  background-color:#fd604b;
+.modal-header {
+  background-color: #fd604b;
 }
 
-.modal-body{
-  background-color:#fff1d7;
+.modal-body {
+  background-color: #fff1d7;
 }
 
-.close.cross{
-  color:#fff1d7 ;
+.close.cross {
+  color: #fff1d7;
 }
 
-.modal-title{
-  color:floralwhite;
+.modal-title {
+  color: floralwhite;
 }
-
